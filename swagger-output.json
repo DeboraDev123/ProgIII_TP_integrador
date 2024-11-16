@@ -990,6 +990,16 @@
         "summary": "Totales de reclamos por estados"
       }
     },
+    "/api/reportes/usuariosPorOficinas": {
+      "get": {
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["Reportes - (Admin)"],
+        "description": "Cantidad de usuarios por oficina",
+        "operationId": "usuariosPorOficinas",
+        "summary": "Cantidad de usuarios por oficina"
+      }
+    },
     "/api/reportes/{formatoReporte}/{idTipoReclamo}": {
       "parameters": [
         {

@@ -25,6 +25,8 @@ const Usuario = {
     return result.insertId;
   },
 
+  
+  
   getUsuarios: async (idUsuarioTipo) => {
     const query = `SELECT idUsuario, nombre, apellido, correoElectronico, idUsuarioTipo, imagen, activo FROM usuarios WHERE idUsuarioTipo = ?`;
     const [result] = await pool.execute(query, [idUsuarioTipo]);

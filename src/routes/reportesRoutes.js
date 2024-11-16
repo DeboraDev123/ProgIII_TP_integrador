@@ -20,6 +20,12 @@ router.get(
 );
 
 router.get(
+  '/UsuariosPorOficinas',
+  estadisticasController.getUsuariosPorOficinas
+);
+
+
+router.get(
   '/:formatoReporte/:idReclamoTipo',
   [
     param('formatoReporte')
